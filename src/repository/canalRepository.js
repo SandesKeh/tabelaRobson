@@ -16,7 +16,7 @@ export async function salvarCanal(canalobj) {
 }
 
 export async function consultarCanal(){
-    let comando = `select*from tb_canal;`
+    let comando = `select * from tb_canal;`
 
     let resposta = await con.query(comando)
     let id = resposta [0];

@@ -36,7 +36,7 @@ endpoint.put('/alterar/programa/:id', async (req,resp) => {
 })
 
 endpoint.delete('/deletar/programa/:id', async (req, resp) => {
-    let id = req.params.id
+    let id = req.params.id;
 
     let res = await deletarPrograma(id)
 

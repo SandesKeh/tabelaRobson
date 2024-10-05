@@ -30,7 +30,7 @@ endpoint.put ('/alterar/:id', async (req, resp) => {
 endpoint.delete ('/deletar/:id', async (req, resp) => {
     let id = req.params.id
 
-    let registro = await deletarCanal (id)
+    let registro = await deletarCanal(id)
     resp.send ()
 })
 
